@@ -224,7 +224,7 @@ public abstract class RealmBasedRecyclerViewAdapter
     public void onBindHeaderViewHolder(RealmViewHolder holder, int position) {
         String header = rowWrappers.get(position).header;
         final GridSLM.LayoutParams layoutParams =
-            GridSLM.LayoutParams.from(holder.itemView.getLayoutParams());
+                GridSLM.LayoutParams.from(holder.itemView.getLayoutParams());
 
         holder.headerTextView.setText(header);
         if (layoutParams.isHeaderInline()) {
